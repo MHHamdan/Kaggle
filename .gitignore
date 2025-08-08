@@ -1,3 +1,5 @@
+# Kaggle Competition Repository - Global Ignores
+
 # Python
 __pycache__/
 *.py[cod]
@@ -16,10 +18,12 @@ parts/
 sdist/
 var/
 wheels/
-<<<<<<< HEAD
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Virtual environments
 .env
@@ -31,98 +35,44 @@ env.bak/
 venv.bak/
 */gpt-oss/
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Environment variables and secrets
+.env*
+*.key
+secrets.json
+config.json
+kaggle.json
 
-# Environment variables
-.env
-*.env
-
-# IDE
+# IDE and editors
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Results and temporary files
-results/
-*.tmp
-*.temp
-
-# Kaggle API credentials
-kaggle.json
-
-# Submission packages
-submission_package_*/
-
-# Model weights (too large for git)
-*.pth
-*.bin
-*.safetensors
-=======
-pip-wheel-metadata/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual Environment
-gpt-oss/
-venv/
-env/
-ENV/
-
-# Environment Variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# API Keys and Secrets
-*.key
-secrets.json
-config.json
-
-# Logs
-logs/
-*.log
-*.log.*
-
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb_checkpoints
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
-
-# MacOS
+# Operating System
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Windows
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Model outputs and cache
-cache/
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+*.log.*
+logs/
+
+# Results, outputs, and cache
+results/
 outputs/
+cache/
 model_cache/
 response_cache/
+test_results/
 
 # Large data files
 *.pkl
@@ -131,18 +81,14 @@ response_cache/
 *.hdf5
 *.h5
 
+# Model weights (too large for git)
+*.pth
+*.bin
+*.safetensors
+
 # Temporary files
 *.tmp
 *.temp
-*.swp
-*.swo
-*~
-
-# Results and findings (keep template but ignore actual findings)
-findings/*.json
-!findings/finding_template.json
-results/
-test_results/
 
 # Database files
 *.db
@@ -154,7 +100,6 @@ test_results/
 *.dll
 *.exe
 *.o
-*.so
 
 # Archives
 *.7z
@@ -166,11 +111,8 @@ test_results/
 *.tar
 *.zip
 
-# Node.js (if any frontend components)
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Competition-specific submission packages
+submission_package_*/
 
 # Coverage reports
 htmlcov/
@@ -181,18 +123,16 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# Translations
-*.mo
-*.pot
-
-# Sphinx documentation
+# Documentation builds
 docs/_build/
 
-# PyBuilder
-target/
-
-# mypy
+# Type checking
 .mypy_cache/
 .dmypy.json
 dmypy.json
->>>>>>> 7ac3ccdcb405c6cb7a7c59ba0a134e233355c23f
+
+# Node.js (if any projects use it)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
