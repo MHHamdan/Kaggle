@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*/gpt-oss/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Results and temporary files
+results/
+*.tmp
+*.temp
+
+# Kaggle API credentials
+kaggle.json
+
+# Submission packages
+submission_package_*/
+
+# Model weights (too large for git)
+*.pth
+*.bin
+*.safetensors
