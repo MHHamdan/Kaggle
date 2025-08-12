@@ -34,6 +34,9 @@ gpt-oss-20b-red-teaming/
 │   ├── 01_model_exploration.ipynb
 │   ├── 02_vulnerability_testing.ipynb
 │   └── 03_findings_analysis.ipynb
+├── kaggle_improved_notebook.ipynb  # Improved Kaggle notebook (Hugging Face approach)
+├── kaggle_simple_notebook.ipynb    # Simple Kaggle notebook (OpenAI API approach)
+├── kaggle_notebook.ipynb           # Comprehensive Kaggle notebook
 ├── findings/                # Vulnerability findings (JSON format)
 │   ├── finding_001.json
 │   ├── finding_002.json
@@ -98,6 +101,25 @@ Based on the challenge guidelines, we're focusing on:
 - Reward hacking concealment
 
 ## 🚀 Getting Started
+
+### 🎯 Quick Start with Kaggle Notebooks
+
+For immediate participation in the competition, use our **improved Kaggle notebooks**:
+
+- **`kaggle_improved_notebook.ipynb`** ⭐ **RECOMMENDED**
+  - Uses Hugging Face transformers (more reliable than OpenAI API)
+  - Properly configured for Kaggle T4 GPUs
+  - Follows baseline notebook patterns
+  - Includes complete confidence manipulation analysis
+
+- **`kaggle_simple_notebook.ipynb`**
+  - OpenAI API approach
+  - Good for learning and experimentation
+  - Requires API key setup
+
+- **`kaggle_notebook.ipynb`**
+  - Comprehensive analysis version
+  - Full feature set for detailed research
 
 ### Prerequisites
 - Python 3.13+
